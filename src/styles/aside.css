@@ -1,0 +1,153 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+aside>.card {
+    padding: 12px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    height: min-content;
+}
+
+aside nav {
+    display: grid;
+    gap: 10px;
+}
+
+aside nav .logo {
+    padding: 10px;
+    width: min-content;
+    transition: opacity 300ms;
+}
+
+aside nav .logo:hover {
+    opacity: 0.7;
+}
+
+aside nav .logo img {
+    width: 80px;
+}
+
+aside nav ul li a {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: color 300ms, background-color 300ms;
+}
+
+aside nav ul li a:hover {
+    background-color: var(--secondary-card-bg-color);
+    color: var(--main-text-color);
+}
+
+aside nav ul li a i.fa {
+    font-size: 1.1rem;
+}
+
+aside .aside-options {
+    display: grid;
+    gap: 30px;
+}
+
+aside .aside-options .library {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside .aside-options .library button {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    transition: background-color 300ms;
+}
+
+aside .aside-options .library button:hover {
+    background-color: var(--secondary-card-bg-color);
+}
+
+aside .aside-options .library button .fa.fa-book {
+    font-size: 1.3rem;
+}
+
+aside .aside-options .playlist {
+    background-color: var(--secondary-card-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+aside .aside-options .playlist h2 {
+    color: var(--main-text-color);
+    font-size: 1rem;
+}
+
+aside .aside-options .playlist p {
+    color: var(--main-text-color);
+    font-size: 0.8rem;
+}
+
+aside .aside-options .playlist button {
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    border-radius: 999px;
+}
+
+aside .aside-options .cookies a {
+    color: var(--secondary-text-color);
+    font-size: 0.75rem;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+aside .aside-options .cookies a:hover {
+    text-decoration: underline;
+}
+
+aside .aside-options .language button {
+    color: var(--main-text-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: opacity 300ms;
+}
+
+aside .aside-options .language button:hover {
+    opacity: 0.7;
+}
+
+aside .aside-options .language button i {
+    font-size: 1rem;
+}

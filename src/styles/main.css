@@ -1,0 +1,44 @@
+main .main-container {
+    margin: 10px 56px 0 300px;
+    height: 100vh;
+    max-width: 80vw;
+}
+
+main .main-container .header__navigation {
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .main-container .header__navigation .navigation {
+    display: flex;
+    gap: 30px;
+}
+
+main .main-container .header__navigation .navigation button {
+    background-color: var(--navigation-button-bg);
+    border-radius: 999px;
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    transition: opacity 300ms;
+}
+
+main .main-container .header__navigation .navigation button:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+main .main-container .playlist-container #result-playlist .offer__scroll-container .offer__list .offer__list-item .card .card img {
+    width: 110px;
+}
+
+
+

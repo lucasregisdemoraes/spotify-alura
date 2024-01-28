@@ -1,0 +1,32 @@
+html {
+    --font-family: 'DM Sans', sans-serif;
+    --bg-color: #000;
+    --card-bg-color: #121212;
+    --secondary-card-bg-color: #242424;
+    --main-text-color: #fff;
+    --secondary-text-color: #b3b3b3;
+    --navigation-button-bg: #000;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+body,
+button {
+    font-family: var(--font-family);
+}
+
+.sr-only {
+    /* Properties from tailwind */
+    /* Propriedades do tailwind */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
